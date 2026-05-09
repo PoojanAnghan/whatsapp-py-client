@@ -1,0 +1,11 @@
+include README.md
+include LICENSE
+recursive-include whatsapp/injected *.js
+recursive-exclude * __pycache__
+recursive-exclude * *.py[co]
+recursive-exclude .wwebjs_auth *
+recursive-exclude .wwebjs_cache *
+exclude test_wa.py
+exclude example.py
+exclude qr.png
+exclude .env

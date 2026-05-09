@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project.scripts]
+whatsapp-py = "whatsapp.cli:main"
+
+[project]
+name = "whatsapp-py-client"
+version = "1.0.0"
+description = "High-performance Python WhatsApp Web client powered by Playwright"
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [
+    { name = "Poojan Anghan" }
+]
+license = { text = "MIT" }
+dependencies = [
+    "playwright>=1.44.0",
+    "pyee>=11.0.0",
+    "pydantic>=2.0.0",
+    "httpx>=0.27.0",
+    "python-magic>=0.4.27",
+    "Pillow>=10.0.0",
+    "ffmpeg-python>=0.2.0",
+    "aiofiles>=23.0.0",
+    "qrcode>=7.4.2",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+    "pytest-asyncio>=0.23.0",
+    "black>=24.0.0",
+    "mypy>=1.9.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["whatsapp*"]
+
+[tool.setuptools.package-data]
+whatsapp = ["injected/*.js"]
