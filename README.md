@@ -13,7 +13,7 @@
 If you are working on a project and want to use the library from source:
 ```bash
 # Clone the repository
-git clone https://github.com/your-repo/whatsapp-py.git
+git clone https://github.com/PoojanAnghan/whatsapp-py-client
 cd whatsapp-py
 
 # Install in editable mode
