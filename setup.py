@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="whatsapp-py",
+    name="whatsapp-py-client",
     version="1.0.0",
     packages=find_packages(),
     include_package_data=True,

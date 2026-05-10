@@ -27,6 +27,12 @@ dependencies = [
     "qrcode>=7.4.2",
 ]
 
+[project.urls]
+Homepage = "https://github.com/PoojanAnghan/whatsapp-py-client"
+Repository = "https://github.com/PoojanAnghan/whatsapp-py-client"
+Issues = "https://github.com/PoojanAnghan/whatsapp-py-client/issues"
+Documentation = "https://github.com/PoojanAnghan/whatsapp-py-client#readme"
+
 [project.optional-dependencies]
 dev = [
     "pytest>=8.0.0",

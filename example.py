@@ -42,7 +42,7 @@ async def on_ready():
     print(f"🚀 Client ready! WA Web version: {version}")
     
     # Example: Send a message to a specific number on startup
-    target_number = "xxxxxxxxxxxx@c.us" 
+    target_number = "1234567890@c.us" # Replace with your target ID
     await client.send_message(target_number, "Hello! I am now online and ready.")
 
 

@@ -87,7 +87,7 @@ media = MessageMedia.from_file("./docs/image.png")
 await client.send_message("1234567890@c.us", media, options={"caption": "Check this out!"})
 
 # Send a PDF from a URL
-pdf_media = await MessageMedia.from_url("https://example.com/report.pdf")
+pdf_media = await MessageMedia.from_url("https://your-domain.com/report.pdf")
 await client.send_message(chat_id, pdf_media)
 ```
 
@@ -116,7 +116,7 @@ Manage groups programmatically with ease.
 
 ```python
 # Create a new group
-res = await client.create_group("Dev Team", ["91... @c.us", "91... @c.us"])
+res = await client.create_group("Dev Team", ["1234567890@c.us", "0987654321@c.us"])
 group_id = res['gid']['_serialized']
 
 # Get a GroupChat object
@@ -124,8 +124,8 @@ group = await client.get_chat_by_id(group_id)
 
 # Perform actions
 await group.set_description("Official developers group.")
-await group.add_participants(["91... @c.us"])
-await group.promote_participants(["91... @c.us"]) # Make admin
+await group.add_participants(["1234567890@c.us"])
+await group.promote_participants(["1234567890@c.us"]) # Make admin
 ```
 
 ---
